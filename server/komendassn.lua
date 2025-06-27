@@ -1,0 +1,17 @@
+ESX = exports["es_extended"]:getSharedObject()
+
+ESX.RegisterServerCallback("fusionpack:getssn", function(playerid, cb)
+    local xPlayer = ESX.GetPlayerFromId(playerid)
+    MySQL.single("SELECT ssn FROM users WHERE identifier = ?", {xPlayer.getIdentifier()}, function(result)
+        cb(result.ssn)
+    end)
+ end)
+
+RegisterServerEvent("fusionpack:showssn")
+AddEventHandler("fusionpack:showssn", function(target)
+    local xPlayer = ESX.GetPlayerFromId(source)
+    local xTarget = ESX.GetPlayerFromId(target)
+    MySQL.single("SELECT ssn FROM users WHERE identifier = ?", {xPlayer.getIdentifier()}, function(result)
+        xTarget.ShowNotification('Obywatel obok pokazał ci pesel: ' .. result, "success")        
+    end)
+end)

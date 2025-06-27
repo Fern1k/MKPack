@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hr_jobcenter</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/fa8cd2a9f4.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div id="1" class="maina">
+            <div class="main-info">
+                <button id="babka" onclick="NextJob(event)"><i id="nigaer"  class="fa-solid fa-arrow-up"></i></button>
+                <h3>Śmieciarz</h3>
+                <img src="./smieciarz.png" width="580px" alt="Zdjęcie śmieciarki">
+                <button onclick="ZatrudnijSie('smieciarz')">Zatrudnij się</button>
+                <button id="babka" onclick="LastJob(event)"><i id="nigaer" class="fa-solid fa-arrow-down"></i></button>
+            </div>
+            <div class="opispracy">
+                <h3>OPIS PRACY</h3>
+                <span>Jedz do wyznaczonej lokalizacji aby podniesc smieci i wrzucic je na smieciarke. Kiedy zaliczysz wszystkie stopy otrzymasz wyplate.</span>
+            </div>
+        </div> 
+        <div id="2" class="maina">
+            <div class="main-info">
+                <button id="babka" onclick="NextJob(event)"><i id="nigaer"  class="fa-solid fa-arrow-up"></i></button>
+                <h3>Ratownik Wodny</h3>
+                <img src="./lifeguard.png" width="580px" alt="Zdjęcie ratownika z motorowka">
+                <button onclick="ZatrudnijSie('lifeguard')">Zatrudnij się</button>
+                <button id="babka" onclick="LastJob(event)"><i id="nigaer" class="fa-solid fa-arrow-down"></i></button>
+            </div>
+            <div class="opispracy">
+                <h3>OPIS PRACY</h3>
+                <span>Plyn do wyznaczonego miejsca i uratuj cywila zanim sie utopi, potem odstaw go do ratownika aby otrzymac wyplate.</span>
+            </div>
+        </div>
+        <div id="3" class="maina">
+            <div class="main-info">
+                <button id="babka" onclick="NextJob(event)"><i id="nigaer"  class="fa-solid fa-arrow-up"></i></button>
+                <h3>Widłak</h3>
+                <img src="./widlak.png" width="580px" alt="Zdjęcie widlakownika z widlakiem">
+                <button onclick="ZatrudnijSie('widlak')">Zatrudnij się</button>
+                <button id="babka" onclick="LastJob(event)"><i id="nigaer" class="fa-solid fa-arrow-down"></i></button>
+            </div>
+            <div class="opispracy">
+                <h3>OPIS PRACY</h3>
+                <span>Uzyj widlaka aby podniesc palete z wyznaczonego miejsca, uzyj numpad 5 oraz numpad 8 aby oposcic lub podniesc widly. Zrzuc palety do wyznaczonej ciezarowki aby otrzymac platnosc.</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

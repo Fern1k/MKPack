@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;    
+}
+
+* {
+    font-family: 'Inter';
+    color: white;
+}
+
+
+/* MAIN */
+
+.main {
+    background-color: #1F1F1F;
+    width: 1100px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-radius: 16px;
+    margin-top: 150px;
+}
+
+/* MAIN INFO */
+
+.maina {
+    display: flex;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-info h3 {
+    font-size: 32px;
+    margin-left: 25px;
+}
+
+.main-info img {
+    margin-left: 20px;
+    border-radius: 57px;
+}
+
+/* OPIS PRACY */
+
+.opispracy {
+    margin-left: 70px;
+    margin-top: 35px;
+    float: right;
+    width: 370px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #7D7D7D;
+}
+.opispracy h3 {
+    font-size: 32px;
+}
+
+.opispracy span {
+    font-size: 24px;
+    color: #E4E4E4;
+    margin-left: 10px;
+}
+
+.maina button {
+    background-color: #2168b0;
+    padding: 12px;
+    font-size: 17px;
+    max-width: 150px;
+    border: 0px;
+    margin-left: 250px;
+    margin-top: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.maina button:hover {
+    background-color: #2168b0;
+
+}
+
+#babka {
+    margin-left: 500px;
+}
